@@ -1,0 +1,42 @@
+/*
+ * 설명: HTML CSS를 이용해서 넷플릭스 사이트 만들기
+*/
+
+/* ----------------------------------------------------
+ * 4. 영화섹션
+ * ---------------------------------------------------- */
+.movie-section {
+  padding: 20px 50px;
+}
+
+.movie-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #e5e5e5;
+}
+
+.movie-list {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.movie-item {
+  flex-shrink: 0; /* Flex 아이템이 줄어들지 않도록 함 */
+  position: relative;
+  transition: transform 0.3s ease-in-out; /* 호버 애니메이션을 위한 전환 효과 */
+  cursor: pointer;
+}
+
+.movie-item img {
+  width: 180px; /* 이미지 너비 */
+  height: 270px; /* 이미지 높이 */
+  object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  border-radius: 5px;
+}
+
+/* 영화 마우스 호버 효과 */
+.movie-item:hover {
+  transform: scale(1.5); /* 마우스 호버 시 1.5배 확대 */
+  z-index: 10; /* 확대 시 다른 요소 위로 올라오도록 */
+}

@@ -1,0 +1,40 @@
+/*
+ * 설명: HTML CSS를 이용해서 넷플릭스 사이트 만들기
+*/
+
+/* ----------------------------------------------------
+ * 2. 네비게이션바
+ * ---------------------------------------------------- */
+.navbar {
+  position: fixed; /* 고정된 위치 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* 네비게이션 바 높이 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999; /* 다른 요소 위에 표시 */
+  transition: background-color 0.4s ease-in-out; /* 배경색 전환 애니메이션 */
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.netflix-logo {
+  height: 30px; /* 로고 크기 */
+  margin-left: 20px; /* 왼쪽 여백 */
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px; /* 아바타 둥글게 */
+  margin-right: 20px; /* 오른쪽 여백 */
+  cursor: pointer;
+}
